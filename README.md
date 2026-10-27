@@ -196,3 +196,27 @@ Baseline Kali – Network Configured
 
 This snapshot captures the clean starting point of the laboratory. Any future misconfigurations or issues can be resolved by restoring to this saved state.
 
+
+# 🛡️ LAB VERIFICATION 
+
+| ✅ Test                        | 🧾 Command                      | 🎯 Expected Result              |
+| ----------------------------- | ------------------------------- | ------------------------------- |
+| 🌐 Check IP address           | `ip a`                          | Exzct Kali IP displayed       |
+| 📡 Gateway testing            | `ping 10.0.2.1`                 | Successful response              |
+| 🌍 Internet connectivity      | `ping 8.8.8.8`                  | Successful response           |
+| 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain responds              |
+| 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
+| 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Snapshot configuration recovered |
+
+### Evidence Results
+
+```text
+IP Address:
+10.0.0.3/24
+
+Gateway:
+10.0.2.1
+
+DNS:
+8.8.8.8
+
