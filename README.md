@@ -44,6 +44,8 @@ Configured on a private virtual network, the setup allows for the addition of mu
 ---
 
 
+
+
 ## 🛡️ METHODOLOGIES
 
 The main goals of this project are to:
@@ -59,5 +61,125 @@ The main goals of this project are to:
 - Prepare the lab as a foundation for advanced cybersecurity experiments.
 
 
+  ----
+
+## 🛡️ SCOPE OF THE LAB ENVIRONMENT
+
+This virtual lab is designed to provide a safe and controlled environment for exploring cybersecurity concepts and practicing authorized security assessments.
+
+It serves as a platform for:
+
+- Conducting reconnaissance on networks
+- Performing port and service discovery
+- Identifying and analyzing vulnerabilities
+- Inspecting and interpreting packet traffic
+- Testing web application defenses
+- Practicing exploitation techniques
+- Experimenting with security tools in a repeatable setup
+
+⚠️ **Note:** This environment is strictly for educational and authorized use. Activities must only target systems you own or have explicit permission to test. Unauthorized use against external systems is prohibited.
+
+----
+
+## 🛡️ LAB BLUEPRINT
+
+
+
+<img width="1109" height="494" alt="Screenshot 2026-08-10 234811" src="https://github.com/user-attachments/assets/8ce0edd8-f3e6-4e20-9e2e-83567f1a8c08" />
+
+This environment is scalable, enabling new virtual hosts to be introduced for advanced experiments..
+
+----
+
+## 🛡️ LAB CONFIGURATION
+
+| 🧩 Component       | ⚙️ Configuration   |
+| ------------------ | ------------------  |
+| 🖥️ Host OS         | Windows 11PRO         |
+| 🧠 Host RAM        | 16 GB               |
+| ⚡ Processor       | Intel Core i7      |
+| 🧰 Hypervisor      | VirtualBox 7.2  |
+| 🐉 Security OS     | Kali Linux 2026.2  |
+| 🧠 Kali RAM        | 2048 MB            |
+| 🌐 Virtual Network | NAT Network        |
+| 📡 Network Address | 10.0.2.0/24        |
+| 🐧 Kali IP Address | 10.0.0.3/24        |
+| 🚪 Default Gateway | 10.0.2.1           |
+| 🌍 DNS Server      | 8.8.8.8            |
+
   
+-----
+
+# 🛡️LAB DEPLOYMENT
+
+## Step 1. Install 7-Zip
+
+7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
+
+**Tool:** 7-Zip
+
+---
+
+## Step 2. INSTALL VIRTUALBOX
+
+VirtualBox was installed as the hypervisor.
+
+---
+
+## Step 3. CREATE NATNETWORK
+A controlled NAT networking setup was deployed inside VirtualBox.
+
+Configuration:
+Network Name: NatNetwork
+IPv4 Prefix:  10.0.2.0/24
+IPv6:        Disabled
+DHCP:         Enabled
+
+
+<img width="1280" height="690" alt="image" src="https://github.com/user-attachments/assets/c0a2b242-5d9d-453f-8dd0-7ae45edc21d7" />
+
+
+
+A NAT-based network was chosen because it enables multiple virtual machines to communicate internally while still maintaining outbound connectivity to external resources. This design ensures that future attacker and target VMs can interact within the lab environment without exposing them directly to the wider internet.
+
+---
+
+## Step 4. IMPORT KALI LINUX
+
+The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
+
+The VM network adapter was configured as follows:
+
+```text
+Adapter 1
+Attached to: NAT Network
+Network:     NatNetwork
+Adapter Type: Intel PRO/1000 MT Desktop(82540EM)
+```
+
+ALLOCATED VirtualMachine:
+
+```text
+RAM: 2048 MB
+```
+<img width="2560" height="1252" alt="image" src="https://github.com/user-attachments/assets/a876ef58-6c26-484a-b9ba-76bdb02a084a" />
+
+To simplify file management, a shared folder was created for seamless transfer between the host and Kali VM.
+
+
+
+---
+
+## Step 5. KALI LINUX NETWORK CONFIGURATION
+
+The Kali Linux network configuration was checked and configured with a consistent IPv4 address.
+
+my BLUEPRINT:
+
+```text
+IP Address: 10.0.0.3
+Subnet Mask: 255.255.255.0
+Gateway: 10.0.2.1
+DNS: 8.8.8.8
+```
 
