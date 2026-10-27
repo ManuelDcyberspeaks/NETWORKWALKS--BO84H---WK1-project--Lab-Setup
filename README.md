@@ -183,3 +183,16 @@ Gateway: 10.0.2.1
 DNS: 8.8.8.8
 ```
 
+
+## Step 6. SAVE A RECOVERY SNAPSHOT
+
+Once the setup was finalized, a snapshot of the Kali VM was taken in VirtualBox.
+
+Snapshot view name:
+
+...text
+Baseline Kali – Network Configured
+...
+
+This snapshot captures the clean starting point of the laboratory. Any future misconfigurations or issues can be resolved by restoring to this saved state.
+
