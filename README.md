@@ -190,7 +190,7 @@ Once the setup was finalized, a snapshot of the Kali VM was taken in VirtualBox.
 
 Snapshot view name:
 
-...text
+```text
 Baseline Kali – Network Configured
 ...
 
