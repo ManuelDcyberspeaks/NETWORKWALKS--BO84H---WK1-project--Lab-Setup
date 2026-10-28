@@ -221,7 +221,10 @@ DNS:
 8.8.8.8
 ...
 
-<img width="2544" height="1106" alt="image" src="https://github.com/user-attachments/assets/f268425c-392c-4a06-899e-4789ad2e3402" />
+(https://github.com/user-attachments/assets/f268425c-392c-4a06-899e-4789ad2e3402)
+(https://github.com/user-attachments/assets/ed9995a6-24ff-4df5-ab4b-30dbec9d8ae9)
+(https://github.com/user-attachments/assets/71ae845d-1aef-4ad5-9156-47ef6cfa7d1c)
+
 
 
 
