@@ -221,11 +221,8 @@ DNS:
 8.8.8.8
 ...
 
-(https://github.com/user-attachments/assets/f268425c-392c-4a06-899e-4789ad2e3402)
-(https://github.com/user-attachments/assets/ed9995a6-24ff-4df5-ab4b-30dbec9d8ae9)
-(https://github.com/user-attachments/assets/71ae845d-1aef-4ad5-9156-47ef6cfa7d1c)
 
-
+<img width="1366" height="691" alt="VirtualBox_kali-linux-2026 1-virtualbox-amd64_11_08_2026_00_48_55" src="https://github.com/user-attachments/assets/70cca7ce-a55c-4cb8-a6cc-312f6ef03ede" />
 
 
 ----
