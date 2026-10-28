@@ -206,7 +206,7 @@ This snapshot captures the clean starting point of the laboratory. Any future mi
 | 🌍 Internet connectivity      | `ping 8.8.8.8`                  | Successful response           |
 | 🔎 Test DNS resolution        | `nslookup networkwalks.com`     | Domain responds              |
 | 🧰 Verify Nmap                | `nmap --version`                | Nmap version displayed          |
-| 🔄 Verify snapshot            | Restore snapshot and run `ip a` | Snapshot configuration recovered |
+| 🔄 Snapshot verification      | Restore snapshot and run `ip a` | Snapshot configuration recovered |
 
 ### Evidence Results
 
@@ -215,10 +215,22 @@ IP Address:
 10.0.0.3/24
 
 Gateway:
-10.0.2.1
+10.0.0.1
 
 DNS:
 8.8.8.8
+
+
+<img width="2560" height="1252" alt="image" src="https://github.com/user-attachments/assets/121004ee-2d0e-4e32-9b3d-045d3556b5d8" />
+
+<img width="2560" height="1252" alt="image" src="https://github.com/user-attachments/assets/2a49dcc0-d06f-4db4-9fbd-dedcba06fd3f" />
+
+<img width="2560" height="1252" alt="image" src="https://github.com/user-attachments/assets/4535ee06-2c64-4e72-a984-00a7fe6b7ec0" />
+
+
+
+
+
 
 # 🔑 KEY TAKEAWAYS FROM LAB DEPLOYMENT
 
