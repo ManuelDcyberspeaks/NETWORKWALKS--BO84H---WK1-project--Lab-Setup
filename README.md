@@ -222,13 +222,27 @@ DNS:
 ...
 
 
-<img width="1366" height="691" alt="VirtualBox_kali-linux-2026 1-virtualbox-amd64_11_08_2026_00_48_55" src="https://github.com/user-attachments/assets/70cca7ce-a55c-4cb8-a6cc-312f6ef03ede" />
 
 
 ----
+# 🛡️ DIFFICULTIES FACED AND MITIGATIONS
 
 
+🚨 Virtualization Startup Failure
+Problem Encountered:
 
+The Kali VM refused to boot because virtualization support was disabled at the hardware level. VirtualBox requires Intel VT‑x (or AMD‑V) to run 64‑bit guest systems, and without it, the VM cannot start.
+
+How It Was Fixed:
+
+-Accessed the system’s BIOS/UEFI settings during startup.
+-Located the Virtualization Technology (VT‑x/AMD‑V) option.
+-Enabled hardware virtualization.
+-Saved changes and rebooted the machine.
+-Relaunched the Kali VM in VirtualBox.
+
+Result:  
+With virtualization enabled, the VM launched successfully and operated as expected.
 
 
 
@@ -288,3 +302,6 @@ Cybersecurity Intern at NETWORKWALKS
 ---
 
 
+## 🛡️ Project Information
+
+**Program Name:** Networkwalks Cybersecurity   | **Week:** 01 | **Project:** Cybersecurity Lab Deployment | **Repository:** GitHub
